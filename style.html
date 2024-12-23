@@ -1,0 +1,325 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1C1C3C;
+    color: white;
+}
+
+html{
+    scroll-behavior:smooth
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 8%;
+}
+
+.cont h1{
+    font-size: 3rem;
+    color: white;
+} 
+
+.nav-bar{
+   margin-left: 30rem;
+   padding-top: 1rem;
+   font-size: 1.3rem;
+}
+
+.nav-bar :hover{
+    color: rgb(128, 128, 128);
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list li{
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero{
+    padding: 12rem 9%;
+    font-size: 2rem;
+}
+
+#nome{
+    color: rgb(1, 255, 1);
+    font-size: 4rem;
+}
+
+.container-principal a > i{
+    color: white;
+    margin-top: 1rem;
+    gap: 5px;
+}
+
+.img-1{
+    height: 35rem;
+    width: 35rem;
+    animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+}
+
+.sobre-mim{
+    padding: 7rem;
+    display: block;
+}
+
+.sobre-mim h2{
+   font-size: 4rem;
+   color: rgb(0, 255, 0);
+}
+
+.sobre-mim p{
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.cards{
+    display: flex;
+    gap: 3rem;
+}
+
+.habilidades{
+   padding: 7rem;
+}
+
+.habilidades h2{
+    font-size: 4rem;
+    color: rgb(0, 255, 0);
+}
+
+.card-creative-1{
+    margin-top: 5rem;
+    height: 25rem;
+    width: 20rem;
+    border: 1px solid black;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2A2A4A;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: linear 2s ease-in;
+}
+
+.card-creative-1 h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.fala{
+    position: relative;
+    margin: 2rem;
+    right: -500px;
+    transition: right 0.4s ease;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.card-creative-1:hover .fala{
+    right: 12px;
+}
+
+.card-creative-1:hover, .card-creative-2:hover, .card-creative-3:hover, .card-creative-4:hover{
+    scale: 1.2;
+}
+
+.img-2{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.232);
+    margin-top: 1rem;
+}
+
+.card-creative-2{
+    margin-top: 5rem;
+    height: 25rem;
+    width: 20rem;
+    border: 1px solid black;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2A2A4A;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-creative-2 h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.card-creative-2 p{
+    position: relative;
+    margin: 2rem;
+    right: -500px;
+    transition: right 0.4s ease;
+    border-radius: 12px;
+    font-size: 1.3rem;
+}
+
+.card-creative-2:hover p{
+    right: 12px;
+}
+
+.card-creative-2 img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.232);
+    margin-top: 1rem;
+}
+
+.card-creative-3{
+    margin-top: 5rem;
+    height: 25rem;
+    width: 20rem;
+    border: 1px solid black;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2A2A4A;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-creative-3 h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.card-creative-3 p{
+    position: relative;
+    margin: 2rem;
+    right: -500px;
+    transition: right 0.4s ease;
+    border-radius: 12px;
+    font-size: 1.3rem;
+}
+
+.card-creative-3:hover p{
+    right: 12px;
+}
+
+.card-creative-3 img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.232);
+    margin-top: 1rem;
+}
+
+.card-creative-4{
+    margin-top: 5rem;
+    height: 25rem;
+    width: 20rem;
+    border: 1px solid black;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2A2A4A;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-creative-4 h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.card-creative-4 p{
+    position: relative;
+    margin: 2rem;
+    right: -500px;
+    transition: right 0.4s ease;
+    border-radius: 12px;
+    font-size: 1.3rem;
+}
+
+.card-creative-4:hover p{
+    right: 12px;
+}
+
+.card-creative-4 img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.232);
+    margin-top: 1rem;
+}
+
+.all-cards-projetos{
+    display: flex;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.projetos{
+    padding: 7rem;
+}
+
+.projetos h2{
+    font-size: 4rem;
+    color: rgb(0, 255, 0);
+}
+
+.card-projetos, .card-projetos-2, .card-projetos-3, .card-projetos-4{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.142); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(220, 220, 220, 0.397);
+    cursor: pointer;
+    
+}
+
+.card-projetos span, .card-projetos-2 span, .card-projetos-3 span, .card-projetos-4 span{
+    font-size: 1.5rem;
+    background: brown;
+    width: 160px;
+    text-align: center;
+    transition: linear 2s ease-in;
+}
+
+.card-projetos:hover, .card-projetos-2:hover, .card-projetos-3:hover, .card-projetos-4:hover{
+    scale: 1.1;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.255);
+}
+
